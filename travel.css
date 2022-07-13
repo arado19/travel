@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+img{
+    width: 20px;
+}
+
+.background {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    color: white;
+}
+
+.background.active{
+    right: 300px;
+}
+
+/*.click{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.click ul li{
+    list-style: none;
+}
+
+.click ul li a{
+    text-decoration: none;
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+.click ul li a:hover{
+    color: black;
+}
+*/
+.menu.active{
+    background: url(file:///C:/Users/USER/Downloads/xmark-solid.svg);
+    width: 20px;
+    background-repeat: none;
+    z-index: 2000;
+    background-position: center;
+}
+
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overlay{
+    background-color: rgba(208, 211, 15, 0.5);
+    mix-blend-mode: overlay;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+header .logo{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:tomato;
+    cursor: pointer;
+    text-shadow:  0 0 12px yellowgreen, 0 0 12px tomato;
+}
+
+header .logo:hover{
+    transform: scale(0.9);
+}
+.header menu img{
+    filter: invert();
+}
+
+video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    object-fit: cover;
+}
+
+.text{
+    z-index: 150;
+    position: absolute;
+}
+
+.text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.text h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 9px;
+}
+
+.text p{
+    color: black;
+    margin-bottom: 30px;
+}
+
+#explore{
+    background-color: black;
+    padding: 7px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#explore:hover{
+    letter-spacing: 5px;
+}
+
+.social ul{
+    z-index: 150;
+    position: absolute;
+    width: 10vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.social li{
+    list-style: none;
+    transform: scale(0.8);
+
+    transition: 1s;
+}
+
+.social ul li:hover{
+    transform: scale(0.8) translateY(-15px);
+}
+
+@media  screen and (max-width: 600px) {
+    .background {
+
+        width: 100%;
+     }
+
+     .background video{
+        width: 100%;
+     }

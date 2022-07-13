@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="travel.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="background">
+      <video
+        src="https://assets.mixkit.co/videos/preview/mixkit-3d-simulation-of-a-red-sunset-at-sea-33919-large.mp4"
+        loop
+        autoplay
+        muted
+      ></video>
+      <div class="overlay"></div>
+
+      <header>
+        <div class="logo"><p>Travel</p></div>
+        <div class="menu">
+          <img
+            src="file:///C:/Users/USER/Downloads/bars-solid%20(1).svg"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <div class="text" style="width: 500px">
+        <h1>Never Stop To</h1>
+        <h2>Exploring The World</h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Loas their default model text, and a search for 'lorem ipsum'
+          will uncover
+        </p>
+        <a id="explore" href="#"> Explore </a>
+      </div>
+
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="file:///C:/Users/USER/Downloads/facebook-f-brands.svg"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="file:///C:/Users/USER/Downloads/twitter-brands.svg"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="file:///C:/Users/USER/Downloads/instagram-brands%20(3).svg"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--   <div class="click">
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> News </a></li>
+            <li><a href="#"> Destination </a></li>
+            <li><a href="#"> Blog </a></li>
+        </ul>
+    </div>
+-->
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector("showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
